@@ -1,4 +1,19 @@
+:root {
+    --page-first-last-headers: Regular 49px/57px Raleway black;
+    --icon-title: Raleway ExtraBold 20px;
+    --icon-text: Raleway Regular 17px;
+    --article-headers: Regular 36px/42px Raleway black;
+    --article-text: Open Sans Regular 16px;
+    --article-box-radius: 5px;
+    --page-top-bottom-menu: 11px/15px Open Sans #A5A5A5;
+    --pricing-box-title: Raleway 20px Bold #13253B;
+    --pricing-box-number: Light 46px/2px Open Sans #55DFB4;
+    --pricing-box-text: Regular 14px/41px Open Sans black;
+    --pricing-box-radius: 18px;
+    --pricing-btn-radius: 23px;
+}
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', 'Raleway', sans-serif;
 }
+
