@@ -1,1 +1,4 @@
- git add
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Raleway', sans-serif;
+}
