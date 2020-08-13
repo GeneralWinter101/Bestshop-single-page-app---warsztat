@@ -1,0 +1,19 @@
+.price-row {
+  [class^="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+  }
+  @media (min-width: 780px) {
+    display: flex;
+
+    @for $i from 1 through 12 {
+      .col-#{ $i } {
+        width: 100% / 12 * $i;
+
+      }
+    }
+  }
+
+}

@@ -1,0 +1,140 @@
+$smartphone: "(max-width: 768px)";
+$tablet: "(min-width: 768px)";
+
+
+.page-header {
+  box-shadow: 0 3px 6px #00000029;
+  width: 100vw;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+
+}
+.page-header .container {
+  padding: 0 15px;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  margin-bottom: 20px;
+
+}
+
+.page-nav .page-nav-list {
+  display: flex;
+}
+
+.page-nav-list {
+  font: 13px 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.x {
+  display: none;
+}
+
+.page-nav-list a {
+  text-decoration: none;
+  color: #A5A5A5;
+  padding: 30px;
+}
+
+.page-nav-list a:hover {
+  color: black;
+  border-bottom: 4px solid #08A6E4;
+  padding-bottom: 25px;
+}
+
+
+.page-nav-burger {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 3%;
+
+  span {
+    margin: 2px;
+    width: 35px;
+    height: 5px;
+    background: #07ACE6;
+    border-radius: 3px;
+  }
+}
+
+.show {
+  display: flex;
+}
+
+.bestshop-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  color: var(--blue);
+  //padding-left: 136px;
+}
+
+@media #{$smartphone} {
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    max-width: 90vw;
+  }
+}
+
+@media #{$smartphone} {
+  .page-header {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100px;
+  }
+}
+
+@media #{$smartphone} {
+  .page-nav .page-nav-list {
+    display: none;
+  }
+  .page-nav .page-nav-list.show {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 33px;
+    background: white;
+    box-shadow:
+     0 3px 6px rgba(48, 48, 48, 0.16),
+     inset 0 8px 4px -4px #ddd;
+    height: 11em;
+    &:hover {
+      color: black;
+      cursor: pointer;
+    }
+  }
+  .nav-1 {
+    padding-bottom: 1em;
+  }
+}
+
+
+@media #{$smartphone} {
+  .page-nav-list a:hover {
+    border-bottom: none;
+  }
+}
+
+@media #{$tablet} {
+  .page-nav-burger {
+    display: none;
+  }
+}
